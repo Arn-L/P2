@@ -6,8 +6,7 @@ alignement vertical. */
 /*class de 2nd niveau
 alignement et porpriétés variable selon écran. */
 .bloc-header{
-    display: flex;
-    flex-direction: row;
+    
 }
 .recherche{
 
