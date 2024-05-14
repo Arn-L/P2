@@ -1,19 +1,39 @@
-/*class de 1er niveau
-alignement vertical. */
-.bloc-section{
-
+* {
+    font-family: 'Raleway', sans-serif;
 }
-/*class de 2nd niveau
-alignement et porpriétés variable selon écran. */
-.bloc-header{
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #36a028;
+    --filter-bg-color: #df1212;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:20px;
+    padding-right: 20px;
     
 }
-.recherche{
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.carte{
+/*class de 3em niveau*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.text-menu{
+    margin-left:40px;
+}
 
-}
-footer{
-
-}
