@@ -51,7 +51,7 @@ header {
 }
 
 .menu-passif {
-    border-top: solid background;
+    border-top: solid transparent;
     height: 35px;
     padding: 15px 0px;
     margin: 0px 15px;
@@ -66,6 +66,39 @@ header {
 
 }
 
+fieldset{
+    border:none;
+}
+#bar-recherche{
+    display:flex;
+    border:none;
+}
+#B-localise{
+    display: flex;
+    background: var(--main-bg-color);
+    padding:20px;
+    border: center;
+    align-items: center;
+    border:none;
+    border-radius: 20px 0px 0px 20px;
+}
+.fa-location-dot{
+    color:black;
+}
 #NomCherche{
-    
+    border:solid 2px;
+    border-color: var(--main-bg-color);
+    border-right: none;
+    border-left: none;
+    text-align: center;
+}
+#B-recherch{
+    display: flex;
+    color: var(--main-bg-color); 
+    background:var(--main-color);
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-radius: 0px 20px 20px 0px;
 }

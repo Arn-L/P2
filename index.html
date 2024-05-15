@@ -28,14 +28,23 @@
 
             <section>
                 <!--recherche-->
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form method="get" action="">
-                    <label for="NomCherche"><i class="fa-solid fa-location-dot" style="color:black;"></i></label>
-                    <input type="search" name="NomCherche" id="NomCherche" placeholder="Marseille, France" size="30" maxlength="20">
-                    <input type="submit" value="rechercher" style="color: var(--main-bg-color) ; background:var(--main-color);" >
-                </form>
-                <p>Texte après le formulaire</p>
+                <fieldset>
+                    <legend>
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    </legend>
+                    <h3>En plein centre-ville ou en pleine nature</h3>
+                    <form method="get" action="" id="bar-recherche">
+                        <label for="NomCherche" id="B-localise"><i class="fa-solid fa-location-dot" ></i></label>
+                        <input type="search" name="NomCherche" id="NomCherche" 
+                          placeholder="Marseille, France" size="30" maxlength="50">
+                        <input type="submit" value="Rechercher" id="B-recherch">
+                    </form>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h2>Filtres</h2>
+                    </legend>
+                </fieldset>
             </section>
             <section id="Hebergement">
                 4 Hotel :
