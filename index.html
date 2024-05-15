@@ -16,6 +16,7 @@
 
 <body>
     <div class="main-container">
+        <!--En Tête-->
         <header>
             <img src="/images/logo/Booki.png" id="logo-booki">
             <nav class="menu">
@@ -25,17 +26,16 @@
 
         </header>
         <main>
-
+            <!--Recherche-->
             <section>
-                <!--recherche-->
-
                 <fieldset>
                     <legend>
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     </legend>
                     <h3>En plein centre-ville ou en pleine nature</h3>
                     <form method="get" action="" id="bar-recherche">
-                        <label for="NomCherche" id="B-localise"><i class="fa-solid fa-location-dot"></i></label>
+                        <label for="NomCherche" id="B-localise"><a href="#"><i
+                                    class="fa-solid fa-location-dot"></i></a></label>
                         <input type="search" name="NomCherche" id="NomCherche" placeholder="Marseille, France" size="30"
                             maxlength="50">
                         <input type="submit" value="Rechercher" id="B-recherch">
@@ -47,31 +47,50 @@
                     </legend>
                 </fieldset>
             </section>
+            <!--Hébergement et Populaire-->
             <section id="Hebergement">
                 4 Hotel :
                 3 Populaire:
 
             </section>
-            <h1>Activités à Marseille</h1>
-            <section>
-                <div class="card-activites">
-                        <img class="cover" src="/images/activites/reno-laithienne.jpg">
-                        <div class="card-title">Vieux-Port</div>
-                </div>
-                <div class="card-activites">
-                        <img class="cover" src="/images/activites/paul-hermann.jpg">
-                        <div class="card-title">Fort de Pomègues</div>
-                </div>
-                <div class="card-activites">
-                        <img class="cover"src="/images/activites/kilyan-sockalingum.jpg">
-                        <div class="card-title">Parc national des Calanques</div>
-                </div>
-                <div class="card-activites">
-                        <img class="cover"src="/images/activites/florian-wehde.jpg">
-                        <div class="card-title">Notre-Dame-de-la-Garde</div>
-                </div>
-            </section>
+            <!--Activités-->
+            <article>
+                <h1>Activités à Marseille</h1>
+                <section>
+                    <div class="card-activites">
+                        <a href="#">
+                            <img class="cover" src="/images/activites/reno-laithienne.jpg">
+                            <div class="card-title">Vieux-Port</div>
+                        </a>
+                    </div>
+                    <div class="card-activites">
+                        <a href="#">
+                            <img class="cover" src="/images/activites/paul-hermann.jpg">
+                            <div class="card-title">Fort de Pomègues</div>
+                        </a>
+                    </div>
+                    <div class="card-activites">
+                        <a href="#">
+                            <img class="cover" src="/images/activites/kilyan-sockalingum.jpg">
+                            <div class="card-title">Parc national des Calanques</div>
+                        </a>
+                    </div>
+                    <div class="card-activites">
+                        <a href="#">
+                            <img class="cover" src="/images/activites/florian-wehde.jpg">
+                            <div class="card-title">Notre-Dame-de-la-Garde</div>
+                        </a>
+                    </div>
+                </section>
+            </article>
+            <article class="hbergement-ans-populaires">
+                <section class="hebergements">
+                    
+                </section>
+                <section class="populaires">
 
+                </section>
+            </article>
             <footer>
                 5 Footer:
         </main>

@@ -60,50 +60,53 @@ header {
 }
 
 
-#Hebergement{
+#Hebergement {}
 
+#Activites {}
+
+/****** Recherche ****************/
+fieldset {
+    border: none;
 }
 
-#Activites{
+#bar-recherche {
+    display: flex;
+    border: none;
+}
 
-}
-/*définition section recherche*/
-fieldset{
-    border:none;
-}
-#bar-recherche{
-    display:flex;
-    border:none;
-}
-#B-localise{
+#B-localise {
     display: flex;
     background: var(--main-bg-color);
-    padding:20px;
+    padding: 20px;
     border: center;
     align-items: center;
-    border:none;
+    border: none;
     border-radius: 20px 0px 0px 20px;
 }
-.fa-location-dot{
-    color:black;
+
+.fa-location-dot {
+    color: black;
 }
-#NomCherche{
-    border:solid 2px;
+
+#NomCherche {
+    border: solid 2px;
     border-color: var(--main-bg-color);
     border-right: none;
     border-left: none;
     text-align: center;
 }
-#B-recherch{
+
+#B-recherch {
     display: flex;
-    color: var(--main-bg-color); 
-    background:var(--main-color);
-    padding:20px;
+    color: var(--main-bg-color);
+    background: var(--main-color);
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    border:none;
+    border: none;
     border-radius: 0px 20px 20px 0px;
 }
+
 
 /*définitions section centrale*/
 .section-title {
@@ -111,36 +114,19 @@ fieldset{
     font-size: 22px;
 }
 
-img{
-    height: 500px;
-}
-
-.card-activites {
+.card {
     background-color: white;
     border-radius: 20px;
+    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 330px; 
-    height: 440px;   
 }
-.cover {
+
+.card img {
     object-fit: cover;
-    width: 330px;
-    height: 380px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
 }
-
-#Activites{
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    gap: 50px;
-}
-
 
 .card-title {
     font-size: 16px;
-    padding: 15px 20px;
 }
 
 .euro {
@@ -150,6 +136,7 @@ img{
 .neutral-star {
     color: var(--main-bg-color)
 }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -164,10 +151,12 @@ img{
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
-.hebergements {
+    .hebergements {
     width: 65%;
 }
+
 
 /****** Populaires ***********/
 .populaires {
@@ -215,7 +204,33 @@ img{
 }
 
 
-#logo-booki{
+/****** Activités *************/
+.card-activites {
+    background-color: rgb(160, 52, 52);
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 330px;
+    height: 440px;
+}
+
+.cover {
+    width: 330px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+
+}
+
+#Activites {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 50px;
+}
+
+
+/****** Définition logo **********/
+#logo-booki {
     height: 19px;
     width: 60px;
     padding: 30px 50px 30px 0px;
