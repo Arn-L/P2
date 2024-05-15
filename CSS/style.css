@@ -4,36 +4,49 @@
 
 :root {
     --main-color: #0065FC;
-    --main-bg-color: #36a028;
-    --filter-bg-color: #df1212;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
 }
 
 .fa-solid {
     color: var(--main-color);
 }
 
-body {
+body{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding-left:20px;
-    padding-right: 20px;
-    
+}
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
 header{
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: space-between;
+    /*align-content: center;*/
 }
-/*class de 3em niveau*/
-.menu{
+.menu{  
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
 }
-.text-menu{
-    margin-left:40px;
-}
+.menu-actif{
+    color: var(--main-color);
+    border-top: solid var(--main-color);/*border-bottom... pour mobile*/
+    height: 35px;
+    padding:15px 0px;/*padding:15px; pour mobile*/
+    margin:0px 15px
+    }
+    .menu-passif{
+        border-top: solid background;
+        height: 35px;
+        padding:15px 0px;
+        margin:0px 15px
+        }
 
