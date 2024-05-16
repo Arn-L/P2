@@ -156,6 +156,13 @@ fieldset {
     .hebergements {
     width: 65%;
 }
+.hebergements .card, img {
+    width: 250px;
+}
+
+.hebergements img {
+    border-radius: 20px 20px 0 0;
+}
 
 
 /****** Populaires ***********/
@@ -204,6 +211,8 @@ fieldset {
 }
 
 
+
+
 /****** Activités *************/
 .card-activites {
     background-color: rgb(160, 52, 52);
@@ -217,7 +226,7 @@ fieldset {
     width: 330px;
     height: 380px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px;*/
     object-fit: cover;
 
 }
