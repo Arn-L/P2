@@ -42,7 +42,14 @@ header {
     display: flex;
 }
 
-.menu-actif {
+.menu  a{
+    border-top: solid transparent;
+    height: 35px;
+    padding: 15px 0px;
+    margin: 0px 15px;
+}
+
+.menu a:hover {
     color: var(--main-color);
     border-top: solid var(--main-color);
     /*border-bottom... pour mobile*/
@@ -52,12 +59,6 @@ header {
     margin: 0px 15px;
 }
 
-.menu-passif {
-    border-top: solid transparent;
-    height: 35px;
-    padding: 15px 0px;
-    margin: 0px 15px;
-}
 
 
 #Hebergement {}
@@ -65,8 +66,8 @@ header {
 #Activites {}
 
 /****** Recherche ****************/
-fieldset {
-    border: none;
+.recherche {
+
 }
 
 #bar-recherche {
@@ -107,6 +108,39 @@ fieldset {
     border-radius: 0px 20px 20px 0px;
 }
 
+.filtre{
+
+}
+.filtre div{
+    margin-bottom: 30px;
+}
+
+.filtre a{
+    background: white;
+    
+    padding: 10px 15px;
+    border: center;
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.filtre a:hover{
+    background: blue;
+    
+    padding: 10px 15px;
+    border: center;
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+
 
 /*définitions section centrale*/
 .section-title {
@@ -139,12 +173,12 @@ fieldset {
 
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+#hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+#hebergements-and-populaires section {
     background-color: red;/*var(--main-bg-color);*/
     border-radius: 20px;
     padding: 30px;
@@ -276,14 +310,14 @@ fieldset {
 
 
 /****** Activités *************/
-.activites{
+#activites{
     
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
 
-.activites section{
+#activites section{
     width: calc(100%-60px);
     display: inline-flex;
     justify-content: space-between;
@@ -304,7 +338,7 @@ fieldset {
     object-fit: cover;
 }
 
-.activites .card-title {
+#activites .card-title {
     padding-left: 15px;
     margin-top: 10px;
     margin-bottom: 4px;
