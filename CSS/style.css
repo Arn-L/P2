@@ -1,4 +1,4 @@
-/*définition globale*/
+/****** Globale *************************/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -31,12 +31,10 @@ a {
     text-decoration: none;
 }
 
-/*définition section en-tête*/
+/****** En-tête *************************/
 header {
     display: flex;
-    /*flex-direction: row;*/
     justify-content: space-between;
-    /*align-content: center;*/
 }
 
 .menu {
@@ -61,14 +59,13 @@ header {
 }
 
 
+/****** Recherche ************************/
+.recherche h2{
+    margin-bottom: 10px;
+}
 
-#Hebergement {}
-
-#Activites {}
-
-/****** Recherche ****************/
-.recherche {
-    margin-bottom: 20px;
+.recherche p{
+    margin: 0px 0px 30px 0px;
 }
 
 #bar-recherche {
@@ -77,7 +74,7 @@ header {
 }
 
 #B-localise {
-    font-size: 18px;
+    font-size: 1.2em;
     display: flex;
     background: var(--main-bg-color);
     padding: 0px 20px;
@@ -88,8 +85,10 @@ header {
 }
 
 #bar-recherche input {
-    font-size: 15px;
+    font-size: 1.1em;
     font-weight: bold;
+    
+    height: 55px;
 }
 
 .fa-location-dot {
@@ -101,40 +100,51 @@ header {
     border-color: var(--main-bg-color);
     border-right: none;
     border-left: none;
+    margin:0px 0px;
     text-align: center;
     color: black;
+    width: 197px;
 }
 
 #B-recherch {
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--main-bg-color);
     background: var(--main-color);
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     border: none;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .filtre div {
-    margin-bottom: 30px;
+    margin: 30px 0px;
+}
+
+.filtre h3{
+    display:inline-block;
+    margin-right: 11px;
 }
 
 .filtre i {
-    margin: 5px;
+    margin-right: 8px;
+    font-size: 1.4em;
+    position:relative;
+    top: 3px;
 }
 
 .filtre a {
     background: white;
-
-    padding: 10px 15px;
+    padding: 18px 21px;
     border: center;
     align-items: center;
     border: solid;
     border-width: 2px;
     border-color: lightgrey;
-    border-radius: 20px;
-    margin-right: 10px;
+    border-radius: 30px;
+    margin-right: 15px;
     font-weight: bold;
 }
 
@@ -152,7 +162,7 @@ header {
     top: -3px;
     padding: 5px 9px;
     border: center;
-    font-size: 10px;
+    font-size: 12px;
     border: solid;
     border-width: 1px;
     border-color: lightgrey;
@@ -166,11 +176,10 @@ header {
 
 
 
-
-/*définitions section centrale*/
+/****** Partie centrale ******/
 .section-title {
     margin: 0;
-    font-size: 2em;
+    padding: 0;
 }
 
 .card {
@@ -224,11 +233,6 @@ header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    /*display:flex;
-    flex-direction: column;/*
-    align-content: stretch;
-    margin-right: 30px;
-    */
 }
 
 .hebergements-title {
@@ -241,11 +245,8 @@ header {
 .hebergements-cards {
     display: grid;
     grid-template-columns: 30.7% 30.7% 30.7%;
-    
     gap: 3.8%;
-    
-    
-
+    margin-top: 3.6%;
 }
 
 .hebergements-cards .card {
@@ -286,18 +287,13 @@ header {
     margin: 0px;
 }
 
-.hebergements-complement {
-    /*width: 100%;
-    */
-    text-align: left;
-    font-size: 1.5em;
-    margin-bottom: 30px;
+.hebergements-plus {
+    height: 20px;
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    /*min-width: 200px;*/
 }
 
 .populaires-title {
@@ -309,7 +305,6 @@ header {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    /*min-width: 200px;*/
 }
 
 .populaires-cards img {
@@ -317,12 +312,11 @@ header {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    /*border: 5px 0px 5px 5px;*/
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 0px 0px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -332,7 +326,6 @@ header {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 0px;
-
 }
 
 .populaires-cards .card-subtitle {
@@ -362,7 +355,7 @@ header {
 }
 
 .card-activites {
-    width: 22%;
+    width: 23.2%;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -376,16 +369,24 @@ header {
     object-fit: cover;
 }
 
-#activites .card-title {
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 4px;
+#activites .card-txt {
+    padding: 0px 0px 18px 20px;
 }
+
+
+/****** pied de page ******/
+footer{
+    background-color: var(--main-bg-color);
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
 
 
 /****** Définition logo **********/
 #logo-booki {
-    height: 19px;
-    width: 60px;
+    height: 20px;
+    width: 62px;
     padding: 30px 50px 30px 0px;
 }
