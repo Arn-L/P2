@@ -21,7 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    min-width: 990px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -210,18 +210,15 @@ header {
     color: var(--main-bg-color)
 }
 
-.fa-star{
-    font-size: 13.5px;
-}
 
 
 /****** Hebergements And Populaires ***********/
-#hebergements-and-populaires {
+.hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
-#hebergements-and-populaires section {
+.hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -285,6 +282,11 @@ header {
 
 .hebergements .card-rating {
     margin: 0px;
+    font-size: 4px; /* Espacement entre les étoiles */
+}
+
+.hebergements .fa-star{
+    font-size: 13.5px; /* Tailles des étoiles */
 }
 
 .hebergements-plus {
@@ -335,6 +337,12 @@ header {
 
 .populaires-cards .card-rating {
     margin: 0px;
+    font-size: 4px; /* Espacement entre les étoiles */
+}
+
+
+.populaires .fa-star{
+    font-size: 12px; /* Taille des étoiles */
 }
 
 
@@ -370,7 +378,9 @@ header {
 }
 
 #activites .card-txt {
-    padding: 0px 0px 18px 20px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
 }
 
 
@@ -388,5 +398,45 @@ footer{
 #logo-booki {
     height: 20px;
     width: 62px;
-    padding: 30px 50px 30px 0px;
+    padding: 20px 50px 30px 0px;
 }
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    
+    .cover {
+        height: 200px;
+    }
+
+} 
