@@ -423,10 +423,13 @@ footer{
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width:768px) {
+    .main-container {
+        padding: 20px;
+    }
     .filtre h3{
         display:flow-root ;
         margin-bottom: 30px;
-
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -461,5 +464,7 @@ footer{
     .cover {
         height: 200px;
     }
+
+    
 }
 
