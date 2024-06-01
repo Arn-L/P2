@@ -1,4 +1,6 @@
-/****** Globale *************************/
+/****** Globale *************************************/
+/****************************************************/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -31,10 +33,17 @@ a {
     text-decoration: none;
 }
 
-/****** En-tête *************************/
+/****** En-tête *************************************/
+/****************************************************/
 header {
     display: flex;
     justify-content: space-between;
+}
+
+#logo-booki{
+    height: 19.09px;
+    width: 61px;
+    padding: 20px 50px 30px 0px;
 }
 
 .menu {
@@ -56,7 +65,9 @@ header {
 }
 
 
-/****** Recherche ************************/
+/****** Recherche ***********************************/
+/****************************************************/
+
 .recherche h2 {
     margin-bottom: 10px;
 }
@@ -105,7 +116,7 @@ header {
 
 #B-recherch {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: var(--main-bg-color);
     background: var(--main-color);
@@ -121,12 +132,16 @@ header {
 }
 
 
+/****** Filtres *************************************/
+/****************************************************/
+
 .filtre {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 30px 0px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .filtre-title {
@@ -151,7 +166,7 @@ header {
     background: white;
     padding: 15px 18px;
     align-items: center;
-    border: solid var(--main-bg-color) 2px;
+    border: solid #D9D9D9 2px;
     border-radius: 30px;
     font-weight: bold;
 }
@@ -160,22 +175,32 @@ header {
     background: var(--filter-bg-color);
 }
 
-.info div {
+.info {
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .info a {
     background: white;
     position: relative;
     top: -3px;
-    padding: 5px 9px;
+    padding: 5px 10px 5px 10px;
     border: center;
     font-size: 12px;
     border: solid;
     border-width: 1px;
     border-color: lightgrey;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 10px;
+
+}
+
+.info i{
+    position: relative;
+    left: 0.4px;
+
 }
 
 .info a:hover {
@@ -184,7 +209,8 @@ header {
 
 
 
-/****** Partie centrale ******/
+/****** Partie centrale def globale *****************/
+/****************************************************/
 .section-title {
     margin: 0;
     padding: 0;
@@ -220,7 +246,9 @@ header {
 
 
 
-/****** Hebergements And Populaires ***********/
+/****** Hebergements And Populaires *****************/
+/****************************************************/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -230,12 +258,15 @@ header {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
+    margin: 0;
     box-sizing: border-box;
 
 }
 
 
-/****** Hebergements ***********/
+/****** Hebergements ********************************/
+/****************************************************/
+
 .hebergements {
     width: 65%;
 }
@@ -303,7 +334,9 @@ header {
     height: 20px;
 }
 
-/****** Populaires ***********/
+/****** Populaires **********************************/
+/****************************************************/
+
 .populaires {
     width: 32%;
 }
@@ -360,7 +393,9 @@ header {
 
 
 
-/****** Activités *************/
+/****** Activités ***********************************/
+/****************************************************/
+
 #activites {
 
     display: flex;
@@ -395,8 +430,9 @@ header {
     margin: 0px 0px 0px 20px;
 }
 
+/****** pied de page ********************************/
+/****************************************************/
 
-/****** pied de page ******/
 footer {
     background-color: var(--main-bg-color);
     padding-left: 30px;
@@ -406,15 +442,12 @@ footer {
 
 
 
-/****** Définition logo **********/
-#logo-booki {
-    height: 20px;
-    width: 62px;
-    padding: 20px 50px 30px 0px;
-}
 
-
+/****************************************************/
 /* Medium devices (tablets, less/equal than 1024px) */
+/****************************************************/
+/****************************************************/
+
 @media (max-width: 1024px) {
     .main-container {
         padding: 0 4.88%;
@@ -468,21 +501,25 @@ footer {
 
 }
 
-
+/*****************************************************/
 /****** Media queries ********************************/
-/* Small devices (phones, less than 768px) */
+/* Small devices (phones, less than 768px)           */
+/*****************************************************/
+
 @media (max-width: 767.98px) {
     .main-container {
         padding: 0;
     }
 
     header {
-        width: ;
-        : 100%;
+        width: 100%;
         padding: 0;
-        margin: 0;
         flex-direction: column;
         align-items: center;
+    }
+
+    .recherche {
+        padding: 0px 20px 0px 20px;
     }
 
     .menu {
@@ -495,7 +532,7 @@ footer {
         align-items: center;
         width: 50%;
         padding-bottom: 15px;
-        border-bottom: lightgrey;
+        border-bottom: solid var(--main-bg-color);
         box-sizing: border-box;
     }
 
@@ -505,7 +542,7 @@ footer {
     }
 
     #NomCherche {
-        width: 200px;
+        width: 100%;
     }
 
     #B-recherch {
@@ -523,37 +560,53 @@ footer {
         font-size: 18px;
     }
 
-    .filtre-boutons {
-        
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 400px;
-        padding: 0;
+    .filtre{
+        margin: 20px 0 30px 0;
     }
 
+    .filtre-title{
+        margin: 0;
+    }
+    .filtre-boutons {
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .filtre-boutons div {
+        width: calc(50% - 10px);
+        height: 50px;
+        
+    }
 
     .filtre-boutons a {
         display: flex;
-        width: 163px;
-        padding: 15px 0px 15px 25px;
+        font-size: 0.9em;
+        padding: 12px 0px 12px 20px;
+        
         justify-content: flex-start;
         align-items: baseline;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
     }
 
-    .filtre i {
-    }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
 
-    .hebergements-and-populaires section{
+    .hebergements-and-populaires section {
         border-radius: 0px;
+        padding: 20px;
     }
 
-    .hebergements-and-populaires .hebergements{
-    background-color: white;
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
     }
 
     .hebergements-cards {
@@ -562,13 +615,13 @@ footer {
         justify-content: space-between;
     }
 
-.hebergements-cards a{
-    margin-bottom: 15px;
-}
+    .hebergements-cards a {
+        margin-bottom: 15px;
+    }
 
     .populaires-cards {
         flex-direction: column;
-        
+
     }
 
     .populaires-cards a {
