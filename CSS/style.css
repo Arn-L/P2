@@ -29,7 +29,8 @@ a {
     text-decoration: none;
 }
 
-.fa-solid { /*couleur icons bleu*/
+.fa-solid {
+    /*couleur icons bleu*/
     color: var(--main-color);
 }
 
@@ -54,7 +55,7 @@ header {
     justify-content: space-between;
 }
 
-#logo-booki{
+#logo-booki {
     height: 19.09px;
     width: 61px;
     padding: 20px 50px 30px 0px;
@@ -110,7 +111,7 @@ header {
 #bar-recherche input {
     font-size: 1.1em;
     font-weight: bold;
-    
+
 
     height: 55px;
 }
@@ -121,7 +122,7 @@ header {
 
 #NomCherche {
     width: 197px;
-    
+
     color: black;
     text-align: left;
     margin: 0px 0px;
@@ -220,7 +221,7 @@ header {
 
 }
 
-.info i{
+.info i {
     position: relative;
     left: 0.4px;
 
@@ -360,11 +361,13 @@ header {
 
 .hebergements .card-rating {
     margin: 0px;
-    font-size: 4px;  /* Espacement entre les étoiles */
+    font-size: 4px;
+    /* Espacement entre les étoiles */
 }
 
 .hebergements .fa-star {
-    font-size: 13.5px;  /* Tailles des étoiles */
+    font-size: 13.5px;
+    /* Tailles des étoiles */
 }
 
 .hebergements-plus {
@@ -402,7 +405,7 @@ header {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 5px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -420,12 +423,14 @@ header {
 
 .populaires-cards .card-rating {
     margin: 0px;
-    font-size: 4px;   /* Espacement entre les étoiles */
+    font-size: 4px;
+    /* Espacement entre les étoiles */
 }
 
 
 .populaires .fa-star {
-    font-size: 12px;  /* Taille des étoiles */
+    font-size: 12px;
+    /* Taille des étoiles */
 }
 
 
@@ -509,8 +514,8 @@ footer {
     }
 
     /* 1024 bare de recherche */
-    #bar-recherche{
-    margin-bottom: 15px;
+    #bar-recherche {
+        margin-bottom: 15px;
     }
 
     /* 1024 filtre de recherche */
@@ -523,13 +528,14 @@ footer {
     .filtre-title {
         margin-bottom: 15px;
     }
-/* 1024 hébergments et populaires */
+
+    /* 1024 hébergments et populaires */
 
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements-and-populaires section{
+    .hebergements-and-populaires section {
         margin-bottom: 50px;
     }
 
@@ -537,7 +543,7 @@ footer {
         width: 100%;
     }
 
-/* 1024 hébergments */
+    /* 1024 hébergments */
 
     .populaires {
         width: 100%;
@@ -563,7 +569,7 @@ footer {
     }
 
 
-/* 1024 Activités */
+    /* 1024 Activités */
     .cover {
         height: 200px;
     }
@@ -592,7 +598,7 @@ footer {
         padding: 0;
     }
 
-    h2{
+    h2 {
         font-size: 1.4em;
     }
 
@@ -600,7 +606,7 @@ footer {
 
 
 
-/* 768 En tête **************************************/
+    /* 768 En tête **************************************/
     header {
         width: 100%;
         padding: 0;
@@ -608,7 +614,7 @@ footer {
         align-items: center;
     }
 
-/* 768 menu */
+    /* 768 menu */
     .menu {
         width: 100%;
     }
@@ -628,13 +634,13 @@ footer {
         border-top: solid transparent;
     }
 
-/* 768 bare recherche*/
-.recherche {
-    padding: 0px 20px 0px 20px;
-}
+    /* 768 bare recherche*/
+    .recherche {
+        padding: 0px 20px 0px 20px;
+    }
 
-    #bar-recherche{
-    /* longeur de la bare de recherche +10px
+    #bar-recherche {
+        /* longeur de la bare de recherche +10px
         pour que bords top et bottom de NomCherche
         soit continue avec B-recherch        
     */
@@ -652,7 +658,8 @@ footer {
     #B-recherch {
         width: 57px;
         position: relative;
-        right: 10px; /*décalage du Bouton pour les bords continue avec NomCherche*/
+        right: 10px;
+        /*décalage du Bouton pour les bords continue avec NomCherche*/
         color: transparent;
         border-radius: 15px 15px 15px 15px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -662,19 +669,21 @@ footer {
         color: white;
         position: relative;
         top: 19px;
-        right: 47px; /*dont +10px pour déclage de B-cherch*/
+        right: 47px;
+        /*dont +10px pour déclage de B-cherch*/
         font-size: 18px;
     }
 
-/* 768 filtres recherche*/
+    /* 768 filtres recherche*/
 
-    .filtre{
+    .filtre {
         margin-bottom: 35px;
     }
 
-    .filtre-title{
+    .filtre-title {
         margin: 0;
     }
+
     .filtre-boutons {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -686,7 +695,7 @@ footer {
     .filtre-boutons div {
         width: calc(50% - 10px);
         height: 50px;
-        
+
     }
 
     .filtre-boutons a {
@@ -703,7 +712,7 @@ footer {
 
 
 
-/* 768 hébergments et populaires*********************/
+    /* 768 hébergments et populaires*********************/
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -711,19 +720,19 @@ footer {
 
     .hebergements-and-populaires section {
         border-radius: 0px;
-        padding: 20px ;
+        padding: 20px;
         margin-bottom: 20px;
     }
-    
 
-/* 768 hébergements*/
+
+    /* 768 hébergements*/
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
         margin-bottom: 35px;
     }
 
-    .hebergements-title{
+    #hebergements-title {
         margin: 0;
     }
 
@@ -737,16 +746,16 @@ footer {
     .hebergements-cards .card {
         margin-top: 15px;
     }
-        
-        .hebergements-plus{
+
+    .hebergements-plus {
         margin-bottom: 15px;
-        }
+    }
 
 
 
 
 
-/* 768 populaires************************************/
+    /* 768 populaires************************************/
 
     .populaires-cards {
         flex-direction: column;
@@ -756,7 +765,7 @@ footer {
         margin: 0px;
     }
 
-    .populaires-cards .card{
+    .populaires-cards .card {
         margin-top: 15px;
     }
 
@@ -768,22 +777,23 @@ footer {
         flex-direction: column;
     }
 
-    #activites .section-titre{
+    #activites .section-titre {
         margin-bottom: 35px;
     }
+
     .card-activites {
         width: 100%;
         margin-bottom: 15px;
     }
 
-    .cover{
-        height: 241px;
+    .cover {
+        height: 141px;
     }
 
 
 
 
-/* 768 footer ***************************************/
+    /* 768 footer ***************************************/
     footer {
         grid-template-columns: 1fr;
     }
