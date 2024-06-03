@@ -1,6 +1,8 @@
+ -Exercice projet2 -
 Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
 Projet de site en HTML & CSS pour l'agence Booki :
+
 Site responsive composé de :
     menu de navigation : [hébergement][activités] 
     section recherche (inactive) avec filtre 
