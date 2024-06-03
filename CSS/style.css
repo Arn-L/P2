@@ -24,6 +24,19 @@ body {
     box-sizing: border-box;
 }
 
+h1{
+    font-size: 1.45em;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 1.45em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -34,7 +47,7 @@ a {
     color: var(--main-color);
 }
 
-/*pour desktop >1024 affichage max 1440 *************/
+/*pour desktop >1024 affichage max 1440 +  marges ***/
 
 
 
@@ -102,7 +115,6 @@ header {
     display: flex;
     background: var(--main-bg-color);
     padding: 0px 20px;
-    border: center;
     align-items: center;
     border: none;
     border-radius: 20px 0px 0px 20px;
@@ -168,24 +180,6 @@ header {
     box-sizing: border-box;
 }
 
-.filtre-title {
-    padding-right: 18px;
-}
-
-.filtre-boutons {
-    width: 668px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.filtre i {
-    margin-right: 7px;
-    font-size: 1.4em;
-    position: relative;
-    top: 2px;
-}
-
 .filtre a {
     background: white;
     padding: 14px 18px;
@@ -199,6 +193,25 @@ header {
     background: var(--filter-bg-color);
 }
 
+
+.filtre-boutons {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filtre-title {
+    padding-right: 18px;
+}
+
+.filtre i {
+    margin-right: 7px;
+    font-size: 1.4em;
+    position: relative;
+    top: 2px;
+}
+
 .info {
     display: flex;
     align-items: center;
@@ -208,11 +221,11 @@ header {
 
 .info .fa-info {
     background: white;
-    padding: 7px 11px 8px 12px;
+    padding: 6px 10px 7px 11px;
     font-size: 12px;
     border: solid  lightgrey 1px;
-   border-radius: 50%;
-   margin-right: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 
@@ -361,7 +374,7 @@ header {
 
 
 
-/****** Populaires **********************************/
+/* 1440 ***** Populaires **********************************/
 /****************************************************/
 
 .populaires {
@@ -421,20 +434,20 @@ header {
 
 
 
-/****** Activités ***********************************/
+/* 1440 ***** Activités ***********************************/
 /****************************************************/
 
 #activites {
 
     display: flex;
     flex-direction: column;
-    padding: 0 30px 30px 30px;
+    padding: 50px 30px 30px 30px;
 }
 
 #activites section {
-    width: calc(100%-60px);
     display: inline-flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 .card-activites {
@@ -461,7 +474,7 @@ header {
 
 
 
-/****** pied de page ********************************/
+/* 1440 ***** pied de page ********************************/
 /****************************************************/
 
 footer {
@@ -552,7 +565,12 @@ footer {
     }
 
 
+
     /* 1024 Activités */
+    #activites{
+        padding-top: 0px;
+    }
+
     .cover {
         height: 200px;
     }
@@ -756,8 +774,10 @@ footer {
         width: 100%;
     }
 
+    /* 768 **** activites *******************/
     #activites section {
         flex-direction: column;
+        margin: 0;
     }
 
     #activites .section-titre {
