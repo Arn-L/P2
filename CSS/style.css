@@ -60,9 +60,11 @@ a {
 
 
 
-
+/****************************************************/
 /* 1440 ******* En-tête *****************************/
 /****************************************************/
+/****************************************************/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -89,7 +91,6 @@ header {
 .menu a:hover {
     color: var(--main-color);
     border-top: solid var(--main-color);
-
 }
 
 
@@ -123,8 +124,6 @@ header {
 #bar-recherche input {
     font-size: 1.1em;
     font-weight: bold;
-
-
     height: 55px;
 }
 
@@ -134,7 +133,6 @@ header {
 
 #NomCherche {
     width: 197px;
-
     color: black;
     text-align: left;
     margin: 0px 0px;
@@ -143,14 +141,9 @@ header {
     border-color: var(--main-bg-color);
     border-right: none;
     border-left: none;
-
 }
 
 #B-recherch {
-    /*
-    position: relative;
-    right: 12px;
-    */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -170,7 +163,6 @@ header {
 
 /* 1440 ***** Filtres *************************************/
 /****************************************************/
-
 .filtre {
     display: flex;
     flex-direction: row;
@@ -232,15 +224,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
 /* 1440 ***** Partie centrale def globale *****************/
 /****************************************************/
 .section-title {
@@ -278,11 +261,8 @@ header {
 
 
 
-
-
 /* 1440 ***** Hebergements And Populaires *****************/
 /****************************************************/
-
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -294,16 +274,13 @@ header {
     padding: 30px;
     margin: 0;
     box-sizing: border-box;
-
 }
-
 
 
 
 
 /* 1440 ***** Hebergements ********************************/
 /****************************************************/
-
 .hebergements {
     width: 65%;
 }
@@ -357,13 +334,11 @@ header {
 
 .hebergements .card-rating {
     margin: 0px;
-    font-size: 4px;
-    /* Espacement entre les étoiles */
+    font-size: 4px;    /* Espacement entre les étoiles */
 }
 
 .hebergements .fa-star {
-    font-size: 13.5px;
-    /* Tailles des étoiles */
+    font-size: 13.5px;    /* Tailles des étoiles */
 }
 
 .hebergements-plus {
@@ -376,7 +351,6 @@ header {
 
 /* 1440 ***** Populaires **********************************/
 /****************************************************/
-
 .populaires {
     width: 32%;
 }
@@ -419,16 +393,13 @@ header {
 
 .populaires-cards .card-rating {
     margin: 0px;
-    font-size: 4px;
-    /* Espacement entre les étoiles */
+    font-size: 4px;    /* Espacement entre les étoiles */
 }
 
 
 .populaires .fa-star {
-    font-size: 12px;
-    /* Taille des étoiles */
+    font-size: 12px;    /* Taille des étoiles */
 }
-
 
 
 
@@ -436,7 +407,6 @@ header {
 
 /* 1440 ***** Activités ***********************************/
 /****************************************************/
-
 #activites {
 
     display: flex;
@@ -444,7 +414,7 @@ header {
     padding: 50px 30px 30px 30px;
 }
 
-#activites section {
+#activites div {
     display: inline-flex;
     justify-content: space-between;
     margin-top: 15px;
@@ -474,9 +444,9 @@ header {
 
 
 
+
 /* 1440 ***** pied de page ********************************/
 /****************************************************/
-
 footer {
     background-color: var(--main-bg-color);
     padding-left: 30px;
@@ -496,25 +466,21 @@ footer {
 
 
 
-
-
-
 /* 1024 ***************************************************/
 /* Medium devices (tablets, less/equal than 1024px) */
 /****************************************************/
 /****************************************************/
+
 
 @media (max-width: 1024px) {
     .main-container {
         padding: 0 4.88%;
     }
 
-    /* 1024 bare de recherche */
     #bar-recherche {
         margin-bottom: 15px;
     }
 
-    /* 1024 filtre de recherche */
     .filtre {
         flex-direction: column;
         align-items: flex-start;
@@ -526,7 +492,6 @@ footer {
     }
 
     /* 1024 hébergments et populaires */
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -540,7 +505,6 @@ footer {
     }
 
     /* 1024 hébergments */
-
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -563,8 +527,6 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-
-
 
     /* 1024 Activités */
     #activites{
@@ -590,8 +552,9 @@ footer {
 
 /* 768 ***********************************************/
 /****** Media queries ********************************/
-/* Small devices (phones, less than 768px)           */
+/* Small devices (phones, less than 768px) ***********/           
 /*****************************************************/
+
 
 @media (max-width: 767.98px) {
     .main-container {
@@ -603,11 +566,7 @@ footer {
         font-size: 1.4em;
     }
 
-
-
-
-
-    /* 768 En tête **************************************/
+    /* 768 En tête **************/
     header {
         width: 100%;
         padding: 0;
@@ -615,7 +574,7 @@ footer {
         align-items: center;
     }
 
-    /* 768 menu */
+    /* 768 menu ******************/
     .menu {
         width: 100%;
     }
@@ -635,16 +594,16 @@ footer {
         border-top: solid transparent;
     }
 
-    /* 768 bare recherche*/
+    /* 768 bare recherche *****************/
     .recherche {
         padding: 0px 20px 0px 20px;
     }
 
-    #bar-recherche {
-        /* longeur de la bare de recherche +10px
+    /* longeur de la bare de recherche +10px
         pour que bords top et bottom de NomCherche
         soit continue avec B-recherch        
     */
+    #bar-recherche {
         width: calc(100% + 30px);
     }
 
@@ -676,7 +635,6 @@ footer {
     }
 
     /* 768 filtres recherche*/
-
     .filtre {
         margin-bottom: 35px;
     }
@@ -696,7 +654,6 @@ footer {
     .filtre-boutons div {
         width: calc(50% - 10px);
         height: 50px;
-
     }
 
     .filtre-boutons a {
@@ -711,10 +668,7 @@ footer {
 
 
 
-
-
     /* 768 hébergments et populaires*********************/
-
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -725,9 +679,7 @@ footer {
         margin-bottom: 20px;
     }
 
-
     /* 768 hébergements*/
-
     .hebergements-and-populaires .hebergements {
         background-color: white;
         margin-bottom: 35px;
@@ -752,12 +704,7 @@ footer {
         margin-bottom: 15px;
     }
 
-
-
-
-
     /* 768 populaires************************************/
-
     .populaires-cards {
         flex-direction: column;
     }
@@ -775,7 +722,7 @@ footer {
     }
 
     /* 768 **** activites *******************/
-    #activites section {
+    #activites div {
         flex-direction: column;
         margin: 0;
     }
@@ -792,9 +739,6 @@ footer {
     .cover {
         height: 141px;
     }
-
-
-
 
     /* 768 footer ***************************************/
     footer {
