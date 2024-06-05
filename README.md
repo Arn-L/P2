@@ -18,8 +18,6 @@ contenu :
 validation w3c :
     HTML :
         _ Error Bad value (action="") - 
-        car la fonction de recherche pas encore active.
-        _ Warning Section lacks heading (class="hebergement-and-populaires") -
-        Car les hierarchies h2 figurent dans 2 sous-sections "hebergement" et "populaire". 
+        car la fonction de recherche pas encore active. 
 
     CSS : Aucune erreur trouvée.
